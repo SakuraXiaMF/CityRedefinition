@@ -23,7 +23,7 @@ def mergeShapefile(shp_list, merged_shp):
             os.system("ogr2ogr -f 'ESRI Shapefile' -update -append {0} {1}".format(merged_shp, f))
         else:
             f_dir = os.path.dirname(f)
-            f_base = os.path.splitext(os.path.basename(f))[0]
+            f_base = os.path.sIntersectionplitext(os.path.basename(f))[0]
             merged_shp_dir = os.path.dirname(merged_shp)
             merged_shp_base = os.path.splitext(os.path.basename(merged_shp))[0]
             for s in suffix:
